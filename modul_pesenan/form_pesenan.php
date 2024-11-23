@@ -21,11 +21,11 @@
   <form action="proses.php" method="POST" enctype="multipart/form-data">
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Id Pesanan</label>
-        <input type="text" name="id" class="form-control" id="exampleInputPassword1">
+        <input type="text" name="id_pesanan" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Nama Pelanggan</label>
-        <input type="text" name="nama" class="form-control" id="exampleInputPassword1">
+        <input type="text" name="nama_pelanggan" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Produk</label>
@@ -33,11 +33,11 @@
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Jumlah</label>
-        <input type="text" name="jml" class="form-control" id="exampleInputPassword1">
+        <input type="text" name="jumlah" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Tanggal Pesan</label>
-        <input type="date" name="tanggal" class="form-control" id="exampleInputPassword1">
+        <input type="date" name="tanggal_pesan" class="form-control" id="exampleInputPassword1">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

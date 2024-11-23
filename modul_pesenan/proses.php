@@ -3,20 +3,20 @@
 include("../koneksi.php");
 
 #2. mengambil value dari form
-$id       = $_POST['id'];
-$nama     = $_POST['nama'];
+$id       = $_POST['id_pesanan'];
+$nama     = $_POST['nama_pelanggan'];
 $produk   = $_POST['produk'];
-$jml      = $_POST['jml'];
-$tanggal  = $_POST['tanggal'];
+$jumlah   = $_POST['jumlah'];
+$tanggal  = $_POST['tanggal_pesan'];
 
 #3.menulis query
-$simpan ="INSERT INTO pesenan (id,nama,produk,jml,tanggal) VALUES ('$id','$nama','$produk','$jml','$tanggal')";
+$simpan = "INSERT INTO pesanan (id_pesanan,nama_pelanggan,produk,jumlah,tanggal_pesan) VALUES ('$id','$nama','$produk','$jumlah','$tanggal')";
 
 #4. Jalankan query
 $proses = mysqli_query ($koneksi,$simpan);
 
 
-//header("location:index.php");
+//heade("location:index.php");
 ?>
 <script>
     document.location="index.php";
