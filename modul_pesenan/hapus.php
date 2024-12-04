@@ -3,7 +3,7 @@
 include("../koneksi.php");
 
 #2. mengambil value dari form
-$id   = $_GET['xyz'];
+$id   = $_GET['id_pesanan'];
 
 #3.menulis query
 $hapus ="DELETE FROM pesanan WHERE id_pesanan='$id'";

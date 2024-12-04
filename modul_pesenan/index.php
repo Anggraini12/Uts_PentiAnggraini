@@ -16,7 +16,7 @@
         <div class="card">
   <div class="card-header">
     <h3>Data Pesanan</h3>
-    <span class="float-end"><a class="btn btn-primary" href="form_pesenan.php"fa fa-address-book"></i> Tambah Data</a></span>
+    <span class="float-end"><a class="btn btn-primary" href="form_pesenan.php"fa fa-address-book></i> Tambah Data</a></span>
   </div>
   <div class="card-body ">
     <table class="table -">
@@ -52,11 +52,11 @@
             <td><?=$data['jumlah']?></td>
             <td><?=$data['tanggal_pesan']?></td>
             <td>
-                <a class="btn btn-info" href="edit.php"> <i class="fa fa-pen-to-square"></i></a>
+                <a class="btn btn-info" href="edit.php?id=<?=$data['id_pesanan']?>"> <i class="fa fa-pen-to-square"></i></a>
                 <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_pesanan']?>">
                 <i class="fa fa-trash"></i>
                 </button>
-          <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="hapus<?=$data['id_pesanan']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
@@ -64,11 +64,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-              Yakin Data <b><?=$data['pesanan']?></b> Ingin Dihapus?
+              Yakin Data <b><?=$data['nama_pelanggan']?></b> Ingin Dihapus?
           </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <a href="hapus.php?xyz=<?=$data['id']?>" class="btn btn-primary">Hapus</a>
+        <a href="hapus.php?id_pesanan=<?=$data['id_pesanan']?>" class="btn btn-primary">Hapus</a>
       </div>
       </div>
       </div>

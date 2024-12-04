@@ -33,7 +33,7 @@
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Jumlah</label>
-        <input type="text" name="jumlah" class="form-control" id="exampleInputPassword1">
+        <input type="number" name="jumlah" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Tanggal Pesan</label>
